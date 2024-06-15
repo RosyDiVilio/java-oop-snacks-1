@@ -10,7 +10,7 @@ public class ContoBancario {
 	
 	public ContoBancario (int conto) {
 		this.conto = conto;
-		this.saldo = 0;
+		this.saldo = 0.0f;
 	}
 	
 	public float getsaldo() {
