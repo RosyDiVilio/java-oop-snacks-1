@@ -21,11 +21,17 @@ public class RegistroStudenti {
 	}
 	
 	public void nuovoStudente(RegistroStudenti nuovoStudente) {
+		//nuovo array più lungo di un elemento
 		RegistroStudenti[] nuoviStudenti = new RegistroStudenti[this.studente.length + 1];
+		//copio array vecchio registro nel nuovo (
 		for (int i = 0; i < this.studente.length; i++); {
+			//per ogni elemento del vecchio array
+			//lo aggiungo al nuovo array, nello stesso posto
 			nuoviStudenti[i] = this.studente[i];
 		}
+		//il posto vuoto vuoto viene riempito con un nuovo studente
 		nuoviStudenti[nuoviStudenti.length - 1] = nuovoStudente;
+		//sostituisco l'indirizo del vecchio registro con il nuovo
 		this.studente = nuoviStudenti;
 	}
 	
